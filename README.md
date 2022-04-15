@@ -19,6 +19,12 @@
 
 5.) create database and replace value in config/config.json and UserRepository.js
 
+6.) Run following command for creating 1st user:-
+
+  npx sequelize-cli db:migrate
+  
+  npx sequelize-cli db:seed:all
+
 
 6.) start server using npm start and test api
 
