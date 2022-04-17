@@ -29,6 +29,6 @@ router.post("/save", userController.store);
 /* Update User data */
 router.put("/update", userController.update);
 /* Delete User Data */
-router.delete("/delete", userController.destroy);
+router.delete("/delete/:id", userController.destroy);
 
 module.exports = router;

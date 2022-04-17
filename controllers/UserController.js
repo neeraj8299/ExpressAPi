@@ -88,7 +88,7 @@ class UserController extends BaseController {
    */
   destroy = async (req, res, next) => {
     try {
-      var userId = req.body.id;
+      var userId = req.params.id;
 
       var response = await this.service.deleteUserData(userId);
       res.json({
